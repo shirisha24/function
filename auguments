@@ -1,0 +1,27 @@
+# default argument
+def fun(a,b=20):
+    print(a+b)
+fun(20,24)
+
+# positional:
+def fun(a,b,c):
+    return a+b+c
+print(fun(1,2,3))
+
+# keyword:
+def fun(a,b=20,c=10):
+    return a+b+c
+print(fun(a=20,b=10,c=5))
+
+# arbitary positional:
+def fun(*names):
+    for name in names:
+        print("hello",name)
+fun("siri","chinni","honey")
+
+# arbitary keyword:
+def fun(**a):
+    for i in a:
+        print(i)
+fun(num=3,colours="blue",fruit="apple")
+    
